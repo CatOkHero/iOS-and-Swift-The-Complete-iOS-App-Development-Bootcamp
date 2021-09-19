@@ -29,3 +29,52 @@ var password = //Replace this comment with your code.
 
 //🚨 Don't change the code below 👇
 print(password)
+
+
+//Don't change this code:
+func calculator() {
+  let a = 3 //Int(readLine()!)! //First input
+  let b = 4 //Int(readLine()!)! //Second input
+  
+  add(n1: a, n2: b)
+  subtract(n1: a, n2: b)
+  multiply(n1: a, n2: b)
+  divide(n1: a, n2: b)
+  
+}
+
+//Write your code below this line to make the above function calls work.
+func add(n1: Int, n2: Int) {
+    print(n1 + n2)
+}
+
+func subtract(n1: Int, n2: Int) {
+     print( n1 - n2)
+}
+
+func multiply(n1: Int, n2: Int) {
+     print( n1 * n2)
+}
+
+func divide(n1: Int, n2: Int) {
+    let res =  Double(n1) / Double(n2)
+    print(res)
+}
+
+calculator()
+
+func isLeap(year: Int) {
+  
+  //Write your code inside this function.
+  if year % 4 == 0 {
+      print("YES")
+  } else if year % 100 == 0 {
+      print("NO")
+  } else if year % 400 == 1 {
+      print("YES")
+  } else {
+      print("NO")
+  }
+}
+
+isLeap(year: 1200)
